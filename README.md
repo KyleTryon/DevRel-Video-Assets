@@ -16,6 +16,8 @@ _developed with ❤️ @ [Sentry](https://github.com/getsentry)_
 - **Customizable**: Control size, font, colors, animation speed, and more
 - **Transparent Background Support**: Export with alpha channel for video editing
 
+![Example Output](.github/img/remotion-code-window.png)
+
 ## 📦 Installation
 
 ```bash
