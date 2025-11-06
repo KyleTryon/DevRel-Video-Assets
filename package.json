@@ -1,10 +1,9 @@
 {
-  "name": "animate-code-tool",
+  "name": "devrel-video-assets",
   "version": "1.0.0",
-  "description": "My Remotion video",
+  "description": "Video assets for DevRel by @TechSquidTV",
   "repository": {},
-  "license": "UNLICENSED",
-  "private": true,
+  "license": "MIT",
   "dependencies": {
     "@remotion/cli": "4.0.372",
     "@remotion/tailwind-v4": "4.0.372",
