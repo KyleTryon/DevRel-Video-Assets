@@ -1,0 +1,24 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.canDecode = void 0;
+const mediabunny_1 = require("mediabunny");
+const canDecode = async (src) => {
+    const input = new mediabunny_1.Input({
+        formats: mediabunny_1.ALL_FORMATS,
+        source: new mediabunny_1.UrlSource(src),
+    });
+    const videoTrack = await input.getPrimaryVideoTrack();
+    if (videoTrack) {
+        if (!(await videoTrack.canDecode())) {
+            return false;
+        }
+    }
+    const audioTrack = await input.getPrimaryAudioTrack();
+    if (audioTrack) {
+        if (!(await audioTrack.canDecode())) {
+            return false;
+        }
+    }
+    return true;
+};
+exports.canDecode = canDecode;

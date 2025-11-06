@@ -1,0 +1,17 @@
+{
+  "mcpServers": {
+    "shadcn": {
+      "command": "npx",
+      "args": [
+        "shadcn@latest",
+        "mcp"
+      ]
+    },
+    "remotion-documentation": {
+      "command": "npx",
+      "args": [
+        "@remotion/mcp@latest"
+      ]
+    }
+  }
+}

@@ -7,13 +7,18 @@
   "private": true,
   "dependencies": {
     "@remotion/cli": "4.0.372",
+    "@remotion/tailwind-v4": "4.0.372",
     "@remotion/zod-types": "4.0.372",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.552.0",
     "react": "19.0.0",
     "react-dom": "19.0.0",
     "remotion": "4.0.372",
-    "zod": "3.22.3",
-    "@remotion/tailwind-v4": "4.0.372",
-    "tailwindcss": "4.0.0"
+    "sugar-high": "^0.9.4",
+    "tailwind-merge": "^3.3.1",
+    "tailwindcss": "4.0.0",
+    "zod": "3.22.3"
   },
   "devDependencies": {
     "@remotion/eslint-config-flat": "4.0.372",
@@ -21,6 +26,7 @@
     "@types/web": "0.0.166",
     "eslint": "9.19.0",
     "prettier": "3.6.0",
+    "shadcn": "^3.5.0",
     "typescript": "5.8.2"
   },
   "scripts": {
@@ -31,5 +37,6 @@
   },
   "sideEffects": [
     "*.css"
-  ]
+  ],
+  "packageManager": "pnpm@10.19.0+sha512.c9fc7236e92adf5c8af42fd5bf1612df99c2ceb62f27047032f4720b33f8eacdde311865e91c411f2774f618d82f320808ecb51718bfa82c060c4ba7c76a32b8"
 }

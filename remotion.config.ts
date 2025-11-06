@@ -5,7 +5,22 @@
 
 import { Config } from "@remotion/cli/config";
 import { enableTailwind } from '@remotion/tailwind-v4';
+import path from 'path';
 
 Config.setVideoImageFormat("jpeg");
 Config.setOverwriteOutput(true);
-Config.overrideWebpackConfig(enableTailwind);
+Config.overrideWebpackConfig((currentConfiguration) => {
+  const config = enableTailwind(currentConfiguration);
+
+  // Add path alias support
+  return {
+    ...config,
+    resolve: {
+      ...config.resolve,
+      alias: {
+        ...config.resolve?.alias,
+        '@': path.resolve(__dirname, 'src'),
+      },
+    },
+  };
+});

@@ -1,0 +1,1 @@
+export declare const canDecode: (src: string) => Promise<boolean>;
